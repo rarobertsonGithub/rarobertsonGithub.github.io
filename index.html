@@ -1,8 +1,11 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Your Name | Software Developer</title>
+  <title>{{site.name}} | Software Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css">
@@ -10,8 +13,8 @@
 <body>
 
   <header>
-    <h1>Your Name</h1>
-    <p>Systems Programmer | Rust | C | Game Dev</p>
+    <h1>{{site.name}}</h1>
+    <p>Game Developer | Software Engineer</p>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -23,11 +26,21 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I am a computer science student focused on systems programming,
-      low-level development, and game engine architecture.
-      I enjoy building tools from scratch and understanding how things work
-      under the hood.
+      I am a computer science student currently attending {{site.school}} and I am working on a {{site.degree}}.
+      I aspire to be a professional game developer. I have experience in programming, traditional & pixel art, and performing music.
+      I love working with the Godot game engine, creating custom game development tools, and learning about software architecture & design patterns.
+      I also have lots of experience in participating in and organizing/managing competitive gaming events and I hope to bring that experience to my developing game development career
     </p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Languages: Python, GDscript, C, C++, C#</li>
+      <li>Systems: Linux, Windows, Mac</li>
+      <li>Game Dev: Godot, Unity, Blender</li>
+      <li>Tools: VScode, QT, MySQL, Office Suite, Adobe Photoshop, Adobe Illustrator</li>
+    </ul>
   </section>
 
   <section id="projects">
@@ -53,22 +66,11 @@
 
   </section>
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>Languages: Rust, C, C++, Python</li>
-      <li>Systems: Linux, OS Concepts, Virtual Memory</li>
-      <li>Game Dev: Godot, Blender</li>
-      <li>Concepts: Concurrency, Algorithms, Data Structures</li>
-    </ul>
-  </section>
-
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
+    <p>Email: {{site.email}}</p>
     <p>
-      <a href="https://github.com/yourusername">GitHub</a> |
-      <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
+      <a href={{site.github_link}}>GitHub</a> |
     </p>
   </section>
 
