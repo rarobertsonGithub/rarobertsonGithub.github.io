@@ -44,6 +44,31 @@
   </section>
 
   <section id="projects">
+    <h3>Projects</h3>
+
+    <h4>Personal Projects</h4>
+    {% for project in site.projects %}
+      {% if project.category == "personal" %}
+        <div class="project">
+          <h5>{{ project.title }}</h5>
+          <p>{{ project.content }}</p>
+        </div>
+      {% endif %}
+    {% endfor %}
+
+    <h6>School Projects</h6>
+    {% for project in site.projects %}
+      {% if project.category == "school" %}
+        <div class="project">
+          <h7>{{ project.title }}</h7>
+          <p>{{ project.content }}</p>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </section>
+
+  <!--  Previous Projects section
+  <section id="projects">
     <h2>Projects</h2>
 
     <div class="project">
@@ -65,9 +90,10 @@
     </div>
 
   </section>
+  -->
 
   <section id="contact">
-    <h2>Contact</h2>
+    <h8>Contact</h8>
     <p>Email: {{site.email}}</p>
     <p>
       <a href={{site.github_link}}>GitHub</a> |
@@ -75,7 +101,7 @@
   </section>
 
   <footer>
-    <p>© 2026 Your Name</p>
+    <p>© 2026 {{site.name}}</p>
   </footer>
 
 </body>

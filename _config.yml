@@ -2,5 +2,10 @@ name: Robbie Robertson
 email: rarobertsonCS@csu.fullerton.edu
 github_name: rarobertsonGithub
 github_link: https://github.com/rarobertsonGithub
+linkedin_link: https://www.linkedin.com/in/robbie-robertson-08811425b/
 school: California State University Fullerton
 degree: Bachelors of Computer Science
+
+collections:
+  projects:
+    output: true
